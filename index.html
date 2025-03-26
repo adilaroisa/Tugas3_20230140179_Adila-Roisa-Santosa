@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksperimen JavaScript - Modul 4</title>
+    <style>
+        /* Buat semua konten berada di tengah */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 10px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #waktu {
+            font-style: italic;
+            margin-top: 20px;
+            color: #7f8c8d;
+            font-size: 18px;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Eksperimen JavaScript - Modul 4</h1>
+    <p>Silakan klik salah satu tombol di bawah ini untuk menjalankan JavaScript:</p>
+
+    <button onclick="tampilkanAlert()">Coba Alert</button>
+    <button onclick="tampilkanWaktu()">Lihat Waktu</button>
+
+    <p id="waktu"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
