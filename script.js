@@ -1,9 +1,13 @@
-// Fungsi untuk menampilkan alert
-function tampilkanAlert() {
-    alert("Data berhasil disimpan! Pengisian tabel telah sukses.");
+// Menampilkan tanggal ke dalam elemen dengan ID "hasil"
+let tanggal = new Date();
+document.getElementById("hasil").innerHTML = tanggal;
+
+// Untuk menampilkan alert tampil()
+function tampil() {
+    alert("✅Data berhasil disimpan! Pengisian tabel telah sukses");
 }
 
-function tampilkanWaktu() {
-    let waktuSekarang = new Date().toString();
-    document.getElementById("waktu").textContent = "Tanggal dan waktu saat ini: " + waktuSekarang;
+// Untuk menampilkan alert show()
+function show() {
+    alert("👋Ini adalah pop up untuk tulisan perkenalan");
 }

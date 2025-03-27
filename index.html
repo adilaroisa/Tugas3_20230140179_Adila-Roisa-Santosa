@@ -70,14 +70,31 @@
             </div>
         </form>
         
-        <button onclick="">Save</button>
+        <button onclick="tampil()">Save</button>
 
         <!-- Tambahan tugas JavaScript -->
-        <button onclick="tampilkanAlert()">Coba Alert</button>
-        <button onclick="tampilkanWaktu()">Tampilkan Waktu</button>
+        <button onclick="show()">Coba Alert</button>
+
+        <p id="hasil"></p>
         <p id="waktu"></p>
     </div>
 
+    
+   <!-- Internal JavaScript -->
+   <script>
+    function tampil() {
+        alert("✅ Data berhasil disimpan! Pengisian tabel telah sukses.");
+    }
+
+    function show() {
+        alert("👋 Halo! Ini adalah pop-up untuk tulisan perkenalan.");
+    }
+
+    let tanggal = new Date();
+    document.getElementById("hasil").innerHTML = tanggal;
+</script>
+
+    <!-- Eksternal JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
